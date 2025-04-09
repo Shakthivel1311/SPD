@@ -1,2 +1,7 @@
-build:
-  pythonVersion: 3.10.13
+services:
+  - type: web
+    name: smart-bin-app
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    plan: free
